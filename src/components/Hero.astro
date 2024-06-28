@@ -1,0 +1,57 @@
+---
+const personalImageAlt = "Federico Fabregues"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import GitHubIcon from "@/components/icons/GitHub.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="object-cover  lg:p-2 lg:w-20  h-full aspect-square rounded-2xl  " 
+      src="/working.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/federico-f%C3%A1bregues-861893182/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Open to work</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Federico Fabregues
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    1 year of experience. <strong
+      >Software Engineer </strong
+    > and <strong>Web Developer.</strong>
+      Buenos Aires, Argentina. 
+  </p>
+  
+  <br>
+  
+  <nav class="flex flex-wrap gap-4 ">
+    <SocialPill href="mailto:fedefabregues@gmail.com">
+      <MailIcon class="size-4" />
+      Contact Me
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/federico-f%C3%A1bregues-861893182/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/fede025">
+      <GitHubIcon class="size-4" />
+      GitHub
+    </SocialPill>
+    
+  </nav>
+</div>

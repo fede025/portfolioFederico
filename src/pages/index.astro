@@ -1,0 +1,95 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import AboutMe from "@/components/AboutMe.astro"
+import Briefcase from "@/components/icons/Briefcase.astro"
+import CodeIcon from "@/components/icons/Code.astro"
+import Experience from "@/components/Experience.astro"
+import ProfileCheck from "@/components/icons/ProfileCheck.astro"
+import Projects from "@/components/Projects.astro"
+import SectionContainer from "@/components/SectionContainer.astro"
+import Hero from "@/components/Hero.astro"
+import Skills from "@/components/Skills.astro"
+import Skills2 from "@/components/Skills2.astro"
+
+import React from "@/components/icons/react.astro"
+import NodeJs from "@/components/icons/NodeJs.astro"
+import Tailwind from "@/components/icons/Tailwind.astro"
+
+
+---
+
+<Layout
+  title="Porftolio of Federico Fabregues - Web Developer"
+  description="Contrata a  Federico Fabregues para crear tu aplicación web o móvil. Desarrollador Web."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero>
+      </slot>
+    </Hero>
+    </SectionContainer>
+    <div class="space-y-24">
+
+    <!-- <SectionContainer id="experiencia">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Briefcase class="size-8" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer> -->
+
+
+    <SectionContainer id="skills">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 "
+      >
+        <Briefcase class="size-8 " />
+        Skills
+      </h2>
+      <Skills />
+
+    </SectionContainer>
+
+
+    <SectionContainer id="skills2">
+      
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 "
+      >
+        <Briefcase class="size-8" />
+         Learning Skills
+      </h2>
+
+      <Skills2 />
+
+    </SectionContainer>
+
+
+
+
+    <SectionContainer id="proyectos">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <CodeIcon class="size-7" />
+        Projects
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+
+    <SectionContainer id="sobre-mi">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+      >
+        <ProfileCheck class="size-8" />
+        About me
+      </h2>
+      <AboutMe />
+    </SectionContainer>
+  </div>
+  </main>
+</Layout>
