@@ -87,11 +87,9 @@ const TAGS = {
     <div class="flex flex-wrap gap-x-2 mt-2">
       <ul class="flex flex-row mb-2 gap-x-8">
           {tags.map((tag) => (
-            <li>
-              
-                <tag.icon class="mb-2 h-12 w-auto gap-10 md:h-20 " /> 
-                {tag.name}
-              
+            <li class="flex flex-col items-center text-center">
+              <tag.icon class="mb-2 h-12 w-auto md:h-20" />
+              <span class="text-sm">{tag.name}</span>
             </li>
           ))}
         </ul>
